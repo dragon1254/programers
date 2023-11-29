@@ -1,12 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <script>
         // 18번 테스트 실패 왜 안되지..
 function solution(s) {
     const stringArray = s.split('');
@@ -33,6 +24,4 @@ function solution(s) {
     var answer = stringArray.join('')
     return answer;
 }
-    </script>
-</body>
-</html>
+        
