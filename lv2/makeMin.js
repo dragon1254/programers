@@ -1,30 +1,15 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <script>
 function solution(A,B){
     let sumArray = []
     for (let i = 0; i < A.length; i++) {
         let sum = 0;
         for (let i = 0; i < A.length; i++) {
-        sum = sum + A[i] * B[i];
+            sum = sum + A[i] * B[i];
         }
         sumArray.push(sum);
         let item = A.splice(0,1)
         A.splice(A.length, 0, item[0])
         console.log(A)
-        console.log(sum)
     }
-    
     let answer = Math.min(...sumArray);
-
     return answer;
 }
-    </script>
-</body>
-</html>
