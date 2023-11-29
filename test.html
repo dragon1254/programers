@@ -22,21 +22,11 @@ function solution(s){
     }
     let countR = s.split('(').length -1;
     let countL = s.split(')').length -1;
-    console.log(countL)
-    console.log(countR)
+
     if(countL < countR || countL > countR || s[0] !== '('|| s[s.length-1] !== ')'){
         answer = false;
     }
     return answer
-// let countRight = s.split('(').length - 1
-// let countLeft = s.split(')').length - 1
-// let answer = true
-// if(countLeft === countRight && s[0] === '('&& s[s.length-1] === ')'){
-//     answer = true
-// } else {
-//     answer = false
-// }
-// return answer;
 }
 </script>
 </body>
