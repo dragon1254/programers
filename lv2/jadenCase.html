@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+function solution(s) {
+    const stringArray = s.split('');
+    const spaceIndexArray = [0];
+    stringArray.forEach((element,index) => {
+        if(element === " "){
+            spaceIndexArray.push(index);
+        }
+    });
+    console.log(spaceIndexArray);
+    var answer = '';
+    return answer;
+}
+    </script>
+</body>
+</html>
